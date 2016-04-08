@@ -55,6 +55,12 @@ var ListView = _react2['default'].createClass({
     DataSource: ListViewDataSource
   },
 
+  getDefaultProps: function() {
+    return {
+      renderScrollComponent: new Function
+    }
+  },
+
   propTypes: _extends({}, _ScrollView2['default'].propTypes, {
 
     dataSource: PropTypes.instanceOf(ListViewDataSource).isRequired,
